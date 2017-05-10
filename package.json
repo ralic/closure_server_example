@@ -1,0 +1,25 @@
+{
+  "name": "c2c",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack -d --watch &",
+    "build": "webpack -p",
+    "live": "live-server ./public",
+    "start": "open ./public/index.html;lein figwheel",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "coffee": "^3.3.0",
+    "html": "^1.0.0",
+    "live-server": "^1.2.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-player": "^0.17.0",
+    "webpack": "^2.4.1"
+  }
+}
