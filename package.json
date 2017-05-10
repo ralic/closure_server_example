@@ -16,6 +16,7 @@
     "babel": "^6.23.0",
     "coffee": "^3.3.0",
     "html": "^1.0.0",
+    "htmlparser": "^1.7.7",
     "live-server": "^1.2.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
