@@ -1,4 +1,4 @@
-(ns zefstyle.core
+(ns scores.core
   (:require [reagent.core :as reagent :refer [atom]]))
 
 ;; -------------------------
@@ -8,9 +8,10 @@
 (defn home-page []
   (let [react-player (aget js/window "deps" "react-player")]
     [:div
-     [:h2 "Zef Style"]
-     [:> react-player {:url "https://youtu.be/uMK0prafzw0"}]]))
+     [:h2 "Never Stops"]
+     [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))
 
+     
 ;; -------------------------
 ;; Initialize app
 

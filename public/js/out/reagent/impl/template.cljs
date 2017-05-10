@@ -98,11 +98,8 @@
 
 ;;; Specialization for input components
 
-;; This gets set from dom.cljs
+;; This gets set from reagent.dom
 (defonce find-dom-node nil)
-
-(defn input-unmount [this]
-  ($! this :cljsInputValue nil))
 
 ;; <input type="??" >
 ;; The properites 'selectionStart' and 'selectionEnd' only exist on some inputs
@@ -115,17 +112,20 @@
   (contains? these-inputs-have-selection-api input-type))
 
 (defn input-set-value [this]
-  (when-some [value ($ this :cljsInputValue)]
+  (when ($ this :cljsInputLive)
     ($! this :cljsInputDirty false)
-    (let [node       (find-dom-node this)
-          node-value ($ node :value)]
-      (when (not= value node-value)
+    (let [rendered-value ($ this :cljsRenderedValue)
+          dom-value ($ this :cljsDOMValue)
+          node (find-dom-node this)]
+      (when (not= rendered-value dom-value)
         (if-not (and (identical? node ($ js/document :activeElement))
                      (has-selection-api? ($ node :type))
-                     (string? value)
-                     (string? node-value))
+                     (string? rendered-value)
+                     (string? dom-value))
           ;; just set the value, no need to worry about a cursor
-          ($! node :value value)
+          (do
+            ($! this :cljsDOMValue rendered-value)
+            ($! node :value rendered-value))
 
           ;; Setting "value" (below) moves the cursor position to the
           ;; end which gives the user a jarring experience.
@@ -148,39 +148,51 @@
           ;; So this is just a warning. The code below is simple
           ;; enough, but if you are tempted to change it, be aware of
           ;; all the scenarios you have handle.
-          (let [existing-offset-from-end (- (count node-value)
-                                            ($ node :selectionStart))
-                new-cursor-offset        (- (count value)
-                                            existing-offset-from-end)]
-            ($! node :value value)
-            ($! node :selectionStart new-cursor-offset)
-            ($! node :selectionEnd   new-cursor-offset)))))))
+          (let [node-value ($ node :value)]
+            (if (not= node-value dom-value)
+              ;; IE has not notified us of the change yet, so check again later
+              (batch/do-after-render #(input-set-value this))
+              (let [existing-offset-from-end (- (count node-value)
+                                                ($ node :selectionStart))
+                    new-cursor-offset        (- (count rendered-value)
+                                                existing-offset-from-end)]
+                ($! this :cljsDOMValue rendered-value)
+                ($! node :value rendered-value)
+                ($! node :selectionStart new-cursor-offset)
+                ($! node :selectionEnd new-cursor-offset)))))))))
 
 (defn input-handle-change [this on-change e]
-  (let [res (on-change e)]
-    ;; Make sure the input is re-rendered, in case on-change
-    ;; wants to keep the value unchanged
-    (when-not ($ this :cljsInputDirty)
-      ($! this :cljsInputDirty true)
-      (batch/do-after-render #(input-set-value this)))
-    res))
+  ($! this :cljsDOMValue (-> e .-target .-value))
+  ;; Make sure the input is re-rendered, in case on-change
+  ;; wants to keep the value unchanged
+  (when-not ($ this :cljsInputDirty)
+    ($! this :cljsInputDirty true)
+    (batch/do-after-render #(input-set-value this)))
+  (on-change e))
 
 (defn input-render-setup [this jsprops]
   ;; Don't rely on React for updating "controlled inputs", since it
   ;; doesn't play well with async rendering (misses keystrokes).
-  (if (and (some? find-dom-node)
-           (some? jsprops)
-           ($ jsprops hasOwnProperty "onChange")
-           ($ jsprops hasOwnProperty "value"))
+  (when (and (some? jsprops)
+             (.hasOwnProperty jsprops "onChange")
+             (.hasOwnProperty jsprops "value"))
+    (assert find-dom-node
+            "reagent.dom needs to be loaded for controlled input to work")
     (let [v ($ jsprops :value)
           value (if (nil? v) "" v)
           on-change ($ jsprops :onChange)]
-      ($! this :cljsInputValue value)
+      (when-not ($ this :cljsInputLive)
+        ;; set initial value
+        ($! this :cljsInputLive true)
+        ($! this :cljsDOMValue value))
+      ($! this :cljsRenderedValue value)
       (js-delete jsprops "value")
       (doto jsprops
         ($! :defaultValue value)
-        ($! :onChange #(input-handle-change this on-change %))))
-    ($! this :cljsInputValue nil)))
+        ($! :onChange #(input-handle-change this on-change %))))))
+
+(defn input-unmount [this]
+  ($! this :cljsInputLive nil))
 
 (defn ^boolean input-component? [x]
   (case x

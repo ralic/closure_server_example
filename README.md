@@ -1,5 +1,10 @@
-#Zef Style
-### An experiment in importing React components from npm, via webpack, to a Clojurescript/Reagent app. See [this blog post](http://blob.tomerweller.com/reagent-import-react-components-from-npm) for more details.
+# Lein figwheel / Reagent never stops
+
+```bash
+. start.pack
+. start.run
+```
+###  An Clojurescript/Reagent app.
 
 Javascript build:
 
@@ -10,11 +15,9 @@ npm install && npm run build
 Clojurescript build (with fighweel):
 
 ```bash
-lein fighweel
+lein figwheel
 ```
 
 while it's running, open `public/index.html`
-
 You should see: 
-
 ![yolandi](screenshot.png)

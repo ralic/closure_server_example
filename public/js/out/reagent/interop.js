@@ -1,4 +1,4 @@
-// Compiled by ClojureScript 1.9.36 {}
+// Compiled by ClojureScript 1.9.521 {}
 goog.provide('reagent.interop');
 goog.require('cljs.core');
 

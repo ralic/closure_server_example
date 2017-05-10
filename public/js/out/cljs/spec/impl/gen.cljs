@@ -66,8 +66,9 @@
 ;      g
 ;      (throw (js/Error. (str "Var " s " is not a generator"))))))
 
-(lazy-combinators hash-map list map not-empty set vector fmap elements
-  bind choose one-of such-that tuple sample return)
+(lazy-combinators hash-map list map not-empty set vector vector-distinct fmap elements
+  bind choose one-of such-that tuple sample return
+  large-integer* double* frequency)
 
 (lazy-prims any any-printable boolean char char-alpha char-alphanumeric char-ascii double
   int keyword keyword-ns large-integer ratio simple-type simple-type-printable
@@ -80,16 +81,41 @@ gens, each of which should generate something sequential."
   (fmap #(apply concat %)
     (apply tuple gens)))
 
+(defn- ^boolean qualified? [ident] (not (nil? (namespace ident))))
+
 (def ^:private
 gen-builtins
   (c/delay
     (let [simple (simple-type-printable)]
-      {number? (one-of [(large-integer) (double)])
+      {any? (one-of [(return nil) (any-printable)])
+       number? (one-of [(large-integer) (double)])
        integer? (large-integer)
-       ;float? (double)
+       int? (large-integer)
+       pos-int? (large-integer* {:min 1})
+       neg-int? (large-integer* {:max -1})
+       nat-int? (large-integer* {:min 0})
+       float? (double)
+       double? (double)
        string? (string-alphanumeric)
+       ident? (one-of [(keyword-ns) (symbol-ns)])
+       simple-ident? (one-of [(keyword) (symbol)])
+       qualified-ident? (such-that qualified? (one-of [(keyword-ns) (symbol-ns)]))
        keyword? (keyword-ns)
+       simple-keyword? (keyword)
+       qualified-keyword? (such-that qualified? (keyword-ns))
        symbol? (symbol-ns)
+       simple-symbol? (symbol)
+       qualified-symbol? (such-that qualified? (symbol-ns))
+       uuid? (uuid)
+       inst? (fmap #(js/Date. %)
+                    (large-integer))
+       seqable? (one-of [(return nil)
+                         (list simple)
+                         (vector simple)
+                         (map simple simple)
+                         (set simple)
+                         (string-alphanumeric)])
+       indexed? (vector simple)
        map? (map simple simple)
        vector? (vector simple)
        list? (list simple)
@@ -99,6 +125,7 @@ gen-builtins
        nil? (return nil)
        false? (return false)
        true? (return true)
+       boolean? (boolean)
        zero? (return 0)
        ;rational? (one-of [(large-integer) (ratio)])
        coll? (one-of [(map simple simple)

@@ -1,0 +1,461 @@
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/scores/core.cljs   line:14  column:10  ----[0m
+
+  [1mUse of undeclared Var scores.core/react-player[0m
+
+  [36m10[0m  [36m    [:div[0m
+  [36m11[0m  [36m     [:h2 "Never Stops"][0m
+  [36m12[0m  [36m     [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [36m13[0m  [36m	 [:h2 "Jupyter"][0m
+  [33m14[0m  [1m     [:> react-player {:url "http://localhost:8080"}]]))[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var scores.core/react-player[0m
+  [36m15[0m  [36m;; -------------------------[0m
+  [36m16[0m  [36m;; Initialize app[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m(defn mount-root [][0m
+  [36m19[0m  [36m  (reagent/render [home-page] (.getElementById js/document "app")))[0m
+
+[36m----  Compiler Warning : Please see src/scores/core.cljs  ----[0m
+[31mFailed to compile "public/js/app.js" in 0.233 seconds.[0m
+[36m----  Could not Read  src/scores/core.cljs   line:14  column:55  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m12[0m  [36m     [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [36m13[0m  [36m	 [:h2 "Jupyter"][0m
+  [33m14[0m  [1m     [:> react-player {:url "http://localhost:8080"}]]))[0m
+  [0m  [0m  [33m                                                      ^--- Unmatched delimiter ][0m
+  [36m15[0m  [36m;; -------------------------[0m
+  [36m16[0m  [36m;; Initialize app[0m
+
+[36m----  Reader Error : Please see src/scores/core.cljs  ----[0m
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/scores/core.cljs   line:14  column:12  ----[0m
+
+  [1mUse of undeclared Var scores.core/react-player[0m
+
+  [36m10[0m  [36m    [:div[0m
+  [36m11[0m  [36m     [:h2 "Never Stops"][0m
+  [36m12[0m  [36m     [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [36m13[0m  [36m	 [:h2 "Jupyter"][0m
+  [33m14[0m  [1m       [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [0m  [0m  [33m           ^--- Use of undeclared Var scores.core/react-player[0m
+  [36m15[0m  [36m;; -------------------------[0m
+  [36m16[0m  [36m;; Initialize app[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m(defn mount-root [][0m
+  [36m19[0m  [36m  (reagent/render [home-page] (.getElementById js/document "app")))[0m
+
+[36m----  Compiler Warning : Please see src/scores/core.cljs  ----[0m
+[31mFailed to compile "public/js/app.js" in 0.483 seconds.[0m
+[36m----  Could not Read  src/scores/core.cljs   line:14  column:97  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m12[0m  [36m     [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [36m13[0m  [36m	 [:h2 "Jupyter"][0m
+  [33m14[0m  [1m       [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [0m  [0m  [33m                                                                                                ^--- Unmatched delimiter ][0m
+  [36m15[0m  [36m;; -------------------------[0m
+  [36m16[0m  [36m;; Initialize app[0m
+
+[36m----  Reader Error : Please see src/scores/core.cljs  ----[0m
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/scores/core.cljs   line:14  column:12  ----[0m
+
+  [1mUse of undeclared Var scores.core/react-player[0m
+
+  [36m10[0m  [36m    [:div[0m
+  [36m11[0m  [36m     [:h2 "Never Stops"][0m
+  [36m12[0m  [36m     [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [36m13[0m  [36m	 [:h2 "Jupyter"][0m
+  [33m14[0m  [1m       [:> react-player {:url "http://localhost:9999/?token=f41216f09034372688fcbc2668971e4e16e9970b149b6ea0"}]]))[0m
+  [0m  [0m  [33m           ^--- Use of undeclared Var scores.core/react-player[0m
+  [36m15[0m  [36m;; -------------------------[0m
+  [36m16[0m  [36m;; Initialize app[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m(defn mount-root [][0m
+  [36m19[0m  [36m  (reagent/render [home-page] (.getElementById js/document "app")))[0m
+
+[36m----  Compiler Warning : Please see src/scores/core.cljs  ----[0m
+[31mFailed to compile "public/js/app.js" in 0.191 seconds.[0m
+[36m----  Could not Read  src/scores/core.cljs   line:14  column:113  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m12[0m  [36m     [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [36m13[0m  [36m	 [:h2 "Jupyter"][0m
+  [33m14[0m  [1m       [:> react-player {:url "http://localhost:9999/?token=f41216f09034372688fcbc2668971e4e16e9970b149b6ea0"}]]))[0m
+  [0m  [0m  [33m                                                                                                                ^--- Unmatched delimiter ][0m
+  [36m15[0m  [36m;; -------------------------[0m
+  [36m16[0m  [36m;; Initialize app[0m
+
+[36m----  Reader Error : Please see src/scores/core.cljs  ----[0m
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/scores/core.cljs   line:14  column:12  ----[0m
+
+  [1mUse of undeclared Var scores.core/react-player[0m
+
+  [36m10[0m  [36m    [:div[0m
+  [36m11[0m  [36m     [:h2 "Never Stops"][0m
+  [36m12[0m  [36m     [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [36m13[0m  [36m	 [:h2 "Jupyter"][0m
+  [33m14[0m  [1m       [:> react-player {:url "http://localhost:9999/?token=f41216f09034372688fcbc2668971e4e16e9970b149b6ea0"}]]))[0m
+  [0m  [0m  [33m           ^--- Use of undeclared Var scores.core/react-player[0m
+  [36m15[0m  [36m;; -------------------------[0m
+  [36m16[0m  [36m;; Initialize app[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m(defn mount-root [][0m
+  [36m19[0m  [36m  (reagent/render [home-page] (.getElementById js/document "app")))[0m
+
+[36m----  Compiler Warning : Please see src/scores/core.cljs  ----[0m
+[31mFailed to compile "public/js/app.js" in 0.289 seconds.[0m
+[36m----  Could not Read  src/scores/core.cljs   line:14  column:113  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m12[0m  [36m     [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [36m13[0m  [36m	 [:h2 "Jupyter"][0m
+  [33m14[0m  [1m       [:> react-player {:url "http://localhost:9999/?token=f41216f09034372688fcbc2668971e4e16e9970b149b6ea0"}]]))[0m
+  [0m  [0m  [33m                                                                                                                ^--- Unmatched delimiter ][0m
+  [36m15[0m  [36m;; -------------------------[0m
+  [36m16[0m  [36m;; Initialize app[0m
+
+[36m----  Reader Error : Please see src/scores/core.cljs  ----[0m
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/scores/core.cljs   line:14  column:12  ----[0m
+
+  [1mUse of undeclared Var scores.core/react-player[0m
+
+  [36m10[0m  [36m    [:div[0m
+  [36m11[0m  [36m     [:h2 "Never Stops"][0m
+  [36m12[0m  [36m     [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [36m13[0m  [36m	 [:h2 "Jupyter"][0m
+  [33m14[0m  [1m       [:> react-player {:url "http://localhost:9999/?token=f41216f09034372688fcbc2668971e4e16e9970b149b6ea0"}]]))[0m
+  [0m  [0m  [33m           ^--- Use of undeclared Var scores.core/react-player[0m
+  [36m15[0m  [36m;; -------------------------[0m
+  [36m16[0m  [36m;; Initialize app[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m(defn mount-root [][0m
+  [36m19[0m  [36m  (reagent/render [home-page] (.getElementById js/document "app")))[0m
+
+[36m----  Compiler Warning : Please see src/scores/core.cljs  ----[0m
+[31mFailed to compile "public/js/app.js" in 0.202 seconds.[0m
+[36m----  Could not Read  src/scores/core.cljs   line:14  column:113  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m12[0m  [36m     [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [36m13[0m  [36m	 [:h2 "Jupyter"][0m
+  [33m14[0m  [1m       [:> react-player {:url "http://localhost:9999/?token=f41216f09034372688fcbc2668971e4e16e9970b149b6ea0"}]]))[0m
+  [0m  [0m  [33m                                                                                                                ^--- Unmatched delimiter ][0m
+  [36m15[0m  [36m;; -------------------------[0m
+  [36m16[0m  [36m;; Initialize app[0m
+
+[36m----  Reader Error : Please see src/scores/core.cljs  ----[0m
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/scores/core.cljs   line:14  column:10  ----[0m
+
+  [1mUse of undeclared Var scores.core/react-player[0m
+
+  [36m10[0m  [36m    [:div[0m
+  [36m11[0m  [36m     [:h2 "Never Stops"][0m
+  [36m12[0m  [36m     [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [36m13[0m  [36m	 [:h2 "Jupyter"][0m
+  [33m14[0m  [1m     [:> react-player {:url "http://localhost:9999/?token=f41216f09034372688fcbc2668971e4e16e9970b149b6ea0"}]]))[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var scores.core/react-player[0m
+  [36m15[0m  [36m;; -------------------------[0m
+  [36m16[0m  [36m;; Initialize app[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m(defn mount-root [][0m
+  [36m19[0m  [36m  (reagent/render [home-page] (.getElementById js/document "app")))[0m
+
+[36m----  Compiler Warning : Please see src/scores/core.cljs  ----[0m
+[31mFailed to compile "public/js/app.js" in 0.209 seconds.[0m
+[36m----  Could not Read  src/scores/core.cljs   line:14  column:111  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m12[0m  [36m     [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [36m13[0m  [36m	 [:h2 "Jupyter"][0m
+  [33m14[0m  [1m     [:> react-player {:url "http://localhost:9999/?token=f41216f09034372688fcbc2668971e4e16e9970b149b6ea0"}]]))[0m
+  [0m  [0m  [33m                                                                                                              ^--- Unmatched delimiter ][0m
+  [36m15[0m  [36m;; -------------------------[0m
+  [36m16[0m  [36m;; Initialize app[0m
+
+[36m----  Reader Error : Please see src/scores/core.cljs  ----[0m
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "public/js/app.js" in 1.481 seconds.[0m
+notifying browser that file changed:  public/js/out/goog/deps.js
+notifying browser that file changed:  public/js/out/cljs_deps.js
+notifying browser that file changed:  out/scores/core.js
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/scores/core.cljs   line:14  column:12  ----[0m
+
+  [1mUse of undeclared Var scores.core/react-player[0m
+
+  [36m10[0m  [36m    [:div[0m
+  [36m11[0m  [36m     [:h2 "Never Stops"][0m
+  [36m12[0m  [36m     [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [36m13[0m  [36m	 [:h2 "Jupyter"][0m
+  [33m14[0m  [1m	      [:> react-player {:url "http://localhost:9999/?token=f41216f09034372688fcbc2668971e4e16e9970b149b6ea0"}]]))[0m
+  [0m  [0m  [33m           ^--- Use of undeclared Var scores.core/react-player[0m
+  [36m15[0m  [36m;; -------------------------[0m
+  [36m16[0m  [36m;; Initialize app[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m(defn mount-root [][0m
+  [36m19[0m  [36m  (reagent/render [home-page] (.getElementById js/document "app")))[0m
+
+[36m----  Compiler Warning : Please see src/scores/core.cljs  ----[0m
+[31mFailed to compile "public/js/app.js" in 0.433 seconds.[0m
+[36m----  Could not Read  src/scores/core.cljs   line:14  column:113  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m12[0m  [36m     [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [36m13[0m  [36m	 [:h2 "Jupyter"][0m
+  [33m14[0m  [1m	      [:> react-player {:url "http://localhost:9999/?token=f41216f09034372688fcbc2668971e4e16e9970b149b6ea0"}]]))[0m
+  [0m  [0m  [33m                                                                                                                ^--- Unmatched delimiter ][0m
+  [36m15[0m  [36m;; -------------------------[0m
+  [36m16[0m  [36m;; Initialize app[0m
+
+[36m----  Reader Error : Please see src/scores/core.cljs  ----[0m
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/scores/core.cljs   line:14  column:8  ----[0m
+
+  [1mUse of undeclared Var scores.core/react-player[0m
+
+  [36m10[0m  [36m    [:div[0m
+  [36m11[0m  [36m     [:h2 "Never Stops"][0m
+  [36m12[0m  [36m     [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [36m13[0m  [36m	 [:h2 "Jupyter"][0m
+  [33m14[0m  [1m	  [:> react-player {:url "http://localhost:9999/?token=f41216f09034372688fcbc2668971e4e16e9970b149b6ea0"}]]))[0m
+  [0m  [0m  [33m       ^--- Use of undeclared Var scores.core/react-player[0m
+  [36m15[0m  [36m;; -------------------------[0m
+  [36m16[0m  [36m;; Initialize app[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m(defn mount-root [][0m
+  [36m19[0m  [36m  (reagent/render [home-page] (.getElementById js/document "app")))[0m
+
+[36m----  Compiler Warning : Please see src/scores/core.cljs  ----[0m
+[31mFailed to compile "public/js/app.js" in 0.19 seconds.[0m
+[36m----  Could not Read  src/scores/core.cljs   line:14  column:109  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m12[0m  [36m     [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [36m13[0m  [36m	 [:h2 "Jupyter"][0m
+  [33m14[0m  [1m	  [:> react-player {:url "http://localhost:9999/?token=f41216f09034372688fcbc2668971e4e16e9970b149b6ea0"}]]))[0m
+  [0m  [0m  [33m                                                                                                            ^--- Unmatched delimiter ][0m
+  [36m15[0m  [36m;; -------------------------[0m
+  [36m16[0m  [36m;; Initialize app[0m
+
+[36m----  Reader Error : Please see src/scores/core.cljs  ----[0m
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/scores/core.cljs   line:14  column:7  ----[0m
+
+  [1mUse of undeclared Var scores.core/react-player[0m
+
+  [36m10[0m  [36m    [:div[0m
+  [36m11[0m  [36m     [:h2 "Never Stops"][0m
+  [36m12[0m  [36m     [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [36m13[0m  [36m	 [:h2 "Jupyter"][0m
+  [33m14[0m  [1m	 [:> react-player {:url "http://localhost:9999/?token=f41216f09034372688fcbc2668971e4e16e9970b149b6ea0"}]]))[0m
+  [0m  [0m  [33m      ^--- Use of undeclared Var scores.core/react-player[0m
+  [36m15[0m  [36m;; -------------------------[0m
+  [36m16[0m  [36m;; Initialize app[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m(defn mount-root [][0m
+  [36m19[0m  [36m  (reagent/render [home-page] (.getElementById js/document "app")))[0m
+
+[36m----  Compiler Warning : Please see src/scores/core.cljs  ----[0m
+[31mFailed to compile "public/js/app.js" in 0.176 seconds.[0m
+[36m----  Could not Read  src/scores/core.cljs   line:14  column:108  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m12[0m  [36m     [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [36m13[0m  [36m	 [:h2 "Jupyter"][0m
+  [33m14[0m  [1m	 [:> react-player {:url "http://localhost:9999/?token=f41216f09034372688fcbc2668971e4e16e9970b149b6ea0"}]]))[0m
+  [0m  [0m  [33m                                                                                                           ^--- Unmatched delimiter ][0m
+  [36m15[0m  [36m;; -------------------------[0m
+  [36m16[0m  [36m;; Initialize app[0m
+
+[36m----  Reader Error : Please see src/scores/core.cljs  ----[0m
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "public/js/app.js" in 0.214 seconds.[0m
+notifying browser that file changed:  out/scores/core.js
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/scores/core.cljs   line:14  column:7  ----[0m
+
+  [1mUse of undeclared Var scores.core/react-player[0m
+
+  [36m10[0m  [36m    [:div[0m
+  [36m11[0m  [36m     [:h2 "Never Stops"][0m
+  [36m12[0m  [36m     [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [36m13[0m  [36m	 [:h2 "Jupyter"][0m
+  [33m14[0m  [1m	 [:> react-player {:url "http://localhost:9999/?token=f41216f09034372688fcbc2668971e4e16e9970b149b6ea0"}]]))[0m
+  [0m  [0m  [33m      ^--- Use of undeclared Var scores.core/react-player[0m
+  [36m15[0m  [36m;; -------------------------[0m
+  [36m16[0m  [36m;; Initialize app[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m(defn mount-root [][0m
+  [36m19[0m  [36m  (reagent/render [home-page] (.getElementById js/document "app")))[0m
+
+[36m----  Compiler Warning : Please see src/scores/core.cljs  ----[0m
+[31mFailed to compile "public/js/app.js" in 0.158 seconds.[0m
+[36m----  Could not Read  src/scores/core.cljs   line:14  column:108  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m12[0m  [36m     [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [36m13[0m  [36m	 [:h2 "Jupyter"][0m
+  [33m14[0m  [1m	 [:> react-player {:url "http://localhost:9999/?token=f41216f09034372688fcbc2668971e4e16e9970b149b6ea0"}]]))[0m
+  [0m  [0m  [33m                                                                                                           ^--- Unmatched delimiter ][0m
+  [36m15[0m  [36m;; -------------------------[0m
+  [36m16[0m  [36m;; Initialize app[0m
+
+[36m----  Reader Error : Please see src/scores/core.cljs  ----[0m
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "public/js/app.js" in 0.229 seconds.[0m
+notifying browser that file changed:  out/scores/core.js
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "public/js/app.js" in 0.285 seconds.[0m
+notifying browser that file changed:  out/scores/core.js
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "public/js/app.js" in 0.539 seconds.[0m
+notifying browser that file changed:  out/scores/core.js
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "public/js/app.js" in 0.685 seconds.[0m
+notifying browser that file changed:  public/js/out/goog/deps.js
+notifying browser that file changed:  public/js/out/cljs_deps.js
+notifying browser that file changed:  out/scores/core.js
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[31mFailed to compile "public/js/app.js" in 0.353 seconds.[0m
+[36m----  Could not Read  src/scores/core.cljs   line:13  column:211  ----[0m
+
+  [1mInvalid token: https://translate.google.com/translate?hl=zh-TW&sl=en&tl=zh-TW&u=http%3A%2F%2Fnode.job-seeker.org%2Fsearch%3Fsource%3Dlnms%26tbm%3Dnws%26sa%3DX%26ved%3D0ahUKEwi98KX8nLjTAhXGKWMKHdKhAM8Q_AUICCgB%26q%3DaPPLE[0m
+
+  [36m11[0m  [36m     [:h2 "Never Stops"][0m
+  [36m12[0m  [36m     ; [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [33m13[0m  [1m     https://translate.google.com/translate?hl=zh-TW&sl=en&tl=zh-TW&u=http%3A%2F%2Fnode.job-seeker.org%2Fsearch%3Fsource%3Dlnms%26tbm%3Dnws%26sa%3DX%26ved%3D0ahUKEwi98KX8nLjTAhXGKWMKHdKhAM8Q_AUICCgB%26q%3DaPPLE[0m
+  [0m  [0m  [33m                                                                                                                                                                                                                  ^--- Invalid token: https://translate.google.com/translate?hl=zh-TW&sl=en&tl=zh-TW&u=http%3A%2F%2Fnode.job-seeker.org%2Fsearch%3Fsource%3Dlnms%26tbm%3Dnws%26sa%3DX%26ved%3D0ahUKEwi98KX8nLjTAhXGKWMKHdKhAM8Q_AUICCgB%26q%3DaPPLE[0m
+  [36m14[0m  [36m;; -------------------------[0m
+  [36m15[0m  [36m;; Initialize app[0m
+
+[36m----  Reader Error : Please see src/scores/core.cljs  ----[0m
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[31mFailed to compile "public/js/app.js" in 0.259 seconds.[0m
+[36m----  Could not Read  src/scores/core.cljs   line:15  column:211  ----[0m
+
+  [1mInvalid token: https://translate.google.com/translate?hl=zh-TW&sl=en&tl=zh-TW&u=http%3A%2F%2Fnode.job-seeker.org%2Fsearch%3Fsource%3Dlnms%26tbm%3Dnws%26sa%3DX%26ved%3D0ahUKEwi98KX8nLjTAhXGKWMKHdKhAM8Q_AUICCgB%26q%3DaPPLE[0m
+
+  [36m13[0m  [36m     ; [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [36m14[0m  [36m[0m
+  [33m15[0m  [1m     https://translate.google.com/translate?hl=zh-TW&sl=en&tl=zh-TW&u=http%3A%2F%2Fnode.job-seeker.org%2Fsearch%3Fsource%3Dlnms%26tbm%3Dnws%26sa%3DX%26ved%3D0ahUKEwi98KX8nLjTAhXGKWMKHdKhAM8Q_AUICCgB%26q%3DaPPLE[0m
+  [0m  [0m  [33m                                                                                                                                                                                                                  ^--- Invalid token: https://translate.google.com/translate?hl=zh-TW&sl=en&tl=zh-TW&u=http%3A%2F%2Fnode.job-seeker.org%2Fsearch%3Fsource%3Dlnms%26tbm%3Dnws%26sa%3DX%26ved%3D0ahUKEwi98KX8nLjTAhXGKWMKHdKhAM8Q_AUICCgB%26q%3DaPPLE[0m
+  [36m16[0m  [36m;; -------------------------[0m
+  [36m17[0m  [36m;; Initialize app[0m
+
+[36m----  Reader Error : Please see src/scores/core.cljs  ----[0m
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "public/js/app.js" in 0.36 seconds.[0m
+notifying browser that file changed:  out/scores/core.js
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "public/js/app.js" in 0.338 seconds.[0m
+notifying browser that file changed:  out/scores/core.js
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "public/js/app.js" in 0.402 seconds.[0m
+notifying browser that file changed:  public/js/out/goog/deps.js
+notifying browser that file changed:  public/js/out/cljs_deps.js
+notifying browser that file changed:  out/scores/core.js
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "public/js/app.js" in 0.503 seconds.[0m
+notifying browser that file changed:  out/scores/core.js
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[31mFailed to compile "public/js/app.js" in 0.246 seconds.[0m
+[36m----  Could not Read  src/scores/core.cljs   line:10  column:5  ----[0m
+
+  [1mEOF while reading, starting at line 10 and column 5[0m
+
+  [36m 8[0m  [36m(defn home-page [][0m
+  [36m 9[0m  [36m  (let [react-player (aget js/window "deps" "react-player")][0m
+  [33m10[0m  [1m    [:div[0m
+  [0m  [0m  [33m    ^--- EOF while reading, starting at line 10 and column 5[0m
+  [36m11[0m  [36m     [:h2 "Never Stops"][0m
+  [36m12[0m  [36m     ; [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [36m13[0m  [36m     ; [:> react-player {:url ""};;))[0m
+
+[36m----  Reader Error : Please see src/scores/core.cljs  ----[0m
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[31mFailed to compile "public/js/app.js" in 0.292 seconds.[0m
+[36m----  Could not Read  src/scores/core.cljs   line:10  column:5  ----[0m
+
+  [1mEOF while reading, starting at line 10 and column 5[0m
+
+  [36m 8[0m  [36m(defn home-page [][0m
+  [36m 9[0m  [36m  (let [react-player (aget js/window "deps" "react-player")][0m
+  [33m10[0m  [1m    [:div[0m
+  [0m  [0m  [33m    ^--- EOF while reading, starting at line 10 and column 5[0m
+  [36m11[0m  [36m     [:h2 "Never Stops"][0m
+  [36m12[0m  [36m     ; [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [36m13[0m  [36m     ; [:> react-player {:url "http://www.microsofttranslator.com/bv.aspx?&lo=SS&from=&to=zh-CHT&a=http%3A%2F%2Ffortune.com%2Fnewsletter%2Fceo-daily%2F"};;))[0m
+
+[36m----  Reader Error : Please see src/scores/core.cljs  ----[0m
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[31mFailed to compile "public/js/app.js" in 0.269 seconds.[0m
+[36m----  Could not Read  src/scores/core.cljs   line:13  column:6  ----[0m
+
+  [1mEOF while reading, starting at line 13 and column 6[0m
+
+  [36m11[0m  [36m     [:h2 "Never Stops"][0m
+  [36m12[0m  [36m     ; [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [33m13[0m  [1m     [:> react-player {:url "http://www.microsofttranslator.com/bv.aspx?&lo=SS&from=&to=zh-CHT&a=http%3A%2F%2Ffortune.com%2Fnewsletter%2Fceo-daily%2F"};;))[0m
+  [0m  [0m  [33m     ^--- EOF while reading, starting at line 13 and column 6[0m
+  [36m14[0m  [36m[0m
+  [36m15[0m  [36m;; -------------------------[0m
+  [36m16[0m  [36m;; Initialize app[0m
+
+[36m----  Reader Error : Please see src/scores/core.cljs  ----[0m
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[31mFailed to compile "public/js/app.js" in 0.387 seconds.[0m
+[36m----  Could not Read  src/scores/core.cljs   line:13  column:151  ----[0m
+
+  [1mInvalid token: http://www.microsofttranslator.com/bv.aspx?&lo=SS&from=&to=zh-CHT&a=http%3A%2F%2Ffortune.com%2Fnewsletter%2Fceo-daily%2F'[0m
+
+  [36m11[0m  [36m     [:h2 "Never Stops"][0m
+  [36m12[0m  [36m     ; [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [33m13[0m  [1m     [:> react-player {:url 'http://www.microsofttranslator.com/bv.aspx?&lo=SS&from=&to=zh-CHT&a=http%3A%2F%2Ffortune.com%2Fnewsletter%2Fceo-daily%2F'};;))[0m
+  [0m  [0m  [33m                                                                                                                                                      ^--- Invalid token: http://www.microsofttranslator.com/bv.aspx?&lo=SS&from=&to=zh-CHT&a=http%3A%2F%2Ffortune.com%2Fnewsletter%2Fceo-daily%2F'[0m
+  [36m14[0m  [36m[0m
+  [36m15[0m  [36m;; -------------------------[0m
+  [36m16[0m  [36m;; Initialize app[0m
+
+[36m----  Reader Error : Please see src/scores/core.cljs  ----[0m
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[31mFailed to compile "public/js/app.js" in 0.282 seconds.[0m
+[36m----  Could not Read  src/scores/core.cljs   line:13  column:6  ----[0m
+
+  [1mEOF while reading, starting at line 13 and column 6[0m
+
+  [36m11[0m  [36m     [:h2 "Never Stops"][0m
+  [36m12[0m  [36m     ; [:> react-player {:url "https://player.vimeo.com/video/216399755?title=0&amp;byline=0"}]]))[0m
+  [33m13[0m  [1m     [:> react-player {:url "http://www.microsofttranslator.com/bv.aspx?&lo=SS&from=&to=zh-CHT&a=http%3A%2F%2Ffortune.com%2Fnewsletter%2Fceo-daily%2F"};;))[0m
+  [0m  [0m  [33m     ^--- EOF while reading, starting at line 13 and column 6[0m
+  [36m14[0m  [36m[0m
+  [36m15[0m  [36m;; -------------------------[0m
+  [36m16[0m  [36m;; Initialize app[0m
+
+[36m----  Reader Error : Please see src/scores/core.cljs  ----[0m
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "public/js/app.js" in 0.405 seconds.[0m
+notifying browser that file changed:  out/scores/core.js
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "public/js/app.js" in 0.364 seconds.[0m
+notifying browser that file changed:  out/scores/core.js
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "public/js/app.js" in 0.42 seconds.[0m
+notifying browser that file changed:  out/scores/core.js
+[0mCompiling "public/js/app.js" from ["src" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "public/js/app.js" in 0.411 seconds.[0m
+notifying browser that file changed:  out/scores/core.js

@@ -1,5 +1,5 @@
-(ns ^:figwheel-no-load zefstyle.dev
-  (:require [zefstyle.core :as core]
+(ns ^:figwheel-no-load scores.dev
+  (:require [scores.core :as core]
             [figwheel.client :as figwheel :include-macros true]))
 
 (enable-console-print!)
