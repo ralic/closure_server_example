@@ -14,14 +14,15 @@
   "license": "GPLv3",
   "dependencies": {
     "babel": "^6.23.0",
-    "coffee": "^3.3.0",
+    "coffee": "^3.3.2",
     "html": "^1.0.0",
     "jsdom": "^10.1.0",
     "live-server": "^1.2.0",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
+    "npm": "^6.0.0",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
     "react-player": "^0.17.0",
-    "system-sleep": "^1.3.0",
-    "webpack": "^2.4.1"
+    "system-sleep": "^1.3.6",
+    "webpack": "^2.7.0"
   }
 }
